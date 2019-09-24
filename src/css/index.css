@@ -1,0 +1,12 @@
+body{
+	color: #000;
+}
+.box{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	color: #ff0;
+	border:1px solid #ccc;
+}

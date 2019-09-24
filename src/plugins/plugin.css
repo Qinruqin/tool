@@ -1,0 +1,6 @@
+.plugin-box{
+	background-color: #0ff;
+	border:1px solid #f00;
+	box-sizing: border-box;
+	box-shadow: 2px 3px 30px #0ff;
+}
