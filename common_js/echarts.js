@@ -125,7 +125,11 @@ function Echart(id) {
             },
             color: ['#0982ce', '#094fce', '#6f5cff', '#17a8bd', '#18c178', '#d8bd52', '#b74f5b', '#1c3175', '#d23884', '#e58334', '#1c3175'],
             series: [{
+<<<<<<< HEAD
                 name: '标题标题',
+=======
+                name: '这是标题标题',
+>>>>>>> b6d484d1e7f84a7718c52c81952222db3ade9ac4
                 type: 'pie',
                 hoverOffset: 20,
                 radius: ['55%', '70%'],
@@ -160,7 +164,11 @@ function Echart(id) {
                         }
                     }
                 },
+<<<<<<< HEAD
                 data: []
+=======
+                data: [{ value: 348, name: '黄埔区' }, { value: 548, name: '番禺区' }, { value: 548, name: '海珠区' }, { value: 348, name: '增城区' }, { value: 448, name: '越秀区' }, { value: 148, name: '花都区' }, { value: 458, name: '南沙区' }]
+>>>>>>> b6d484d1e7f84a7718c52c81952222db3ade9ac4
             }]
         };
         if (that.option && _typeof(that.option) === "object") {
