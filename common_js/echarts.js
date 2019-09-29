@@ -125,7 +125,7 @@ function Echart(id) {
             },
             color: ['#0982ce', '#094fce', '#6f5cff', '#17a8bd', '#18c178', '#d8bd52', '#b74f5b', '#1c3175', '#d23884', '#e58334', '#1c3175'],
             series: [{
-                name: '各区域回收物回收量',
+                name: '标题标题',
                 type: 'pie',
                 hoverOffset: 20,
                 radius: ['55%', '70%'],
@@ -160,7 +160,7 @@ function Echart(id) {
                         }
                     }
                 },
-                data: [{ value: 335, name: '天河区' }, { value: 310, name: '白云区' }, { value: 234, name: '从化区' }, { value: 135, name: '荔湾区' }, { value: 348, name: '黄埔区' }, { value: 548, name: '番禺区' }, { value: 548, name: '海珠区' }, { value: 348, name: '增城区' }, { value: 448, name: '越秀区' }, { value: 148, name: '花都区' }, { value: 458, name: '南沙区' }]
+                data: []
             }]
         };
         if (that.option && _typeof(that.option) === "object") {
