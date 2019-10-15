@@ -1,0 +1,133 @@
+.top{
+	height: 50px;
+	background: red;
+}
+.foot{
+	height: 50px;
+	background: green;
+}
+.left{
+	height: 100px;
+	background: blue;
+}
+.center{
+	height: 100px;
+	background: yellow;
+}
+.right{
+	height: 100px;
+	background: purple;
+}
+/*    flex方式       S   */
+.content-box1{
+	display: flex;
+	justify-content: space-between;
+}
+.content-box1 .left1,.content-box1 .right1{
+	width: 200px;
+}
+.content-box1 .center1{
+	flex: 1;
+}
+/*    flex方式       E   */
+/*    float方式       S   */
+.content-box3{
+	width: 100%;
+	overflow: hidden;
+}
+.content-box3 > div{
+	float: left;
+}
+.content-box3 .left3{
+	width: 200px;
+	margin-left:-100%;
+}
+.content-box3 .center3{
+	margin-left:200px;
+	margin-right: -200px;
+	width: 100%;
+}
+.content-box3 .right3{
+	width: 200px;
+	margin-left: -200px;
+}
+/*    float方式       E   */
+/*    position方式       S   */
+.content-box2{
+	position: relative;
+	width: 100%;
+	padding-left: 200px ;
+	padding-right: 200px ;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.content-box2 div{
+	box-sizing: border-box;
+}
+.content-box2 .left2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+}
+.content-box2 .center2{
+	width: 100%;
+}
+.content-box2 .right2{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 200px;
+}
+/*    position方式       E   */
+
+
+/*    双飞翼布局--float浮动   S    */
+.two-content-box1{
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.two-content-box1 .two-left1{
+	float: left;
+	width: 200px;
+	margin-left: -100%;
+}
+.two-content-box1 .two-right1{
+	float: left;
+	width: 200px;
+	margin-left: -200px;
+}
+.two-content-box1 .two-center1{
+	width: 100%;
+	float: left;
+}
+.two-content-box1 .two-center1 > div{
+	margin: 0 200px;
+}
+
+/*    双飞翼布局--float浮动   S    */
+
+/*    table-cell表格布局   S    */
+.three-content-box1{
+	width: 100%;
+	display: table;
+}
+.three-content-box1 > div{
+	display: table-cell;
+}
+.three-content-box1 .left{
+	width: 200px;
+}
+.three-content-box1 .right{
+	width: 200px;
+}
+/*    table-cell表格布局   E    */
+/*    网格布局   S    */
+.four-content-box{
+	width: 100%;
+	display: grid;
+	grid-template-rows: 100px;
+	grid-template-columns: 200px auto 200px; 
+}
+/*    网格布局   E    */

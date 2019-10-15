@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3列布局</title>
+	<link rel="stylesheet" type="text/css" href="./layout.css">
+</head>
+<body>
+	<p>圣杯布局：左右两边固定宽度，中间自适应</p>
+	<h5>圣杯布局--flex</h5>
+	<div class="one">
+		<div class="top">这是头部</div>
+		<div class="content-box1">
+			<div class="left1 left">左边</div>
+			<div class="center1 center">中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容</div>
+			<div class="right1 right">右边</div>
+		</div>
+		<div class="foot">这是底部</div>
+	</div>
+	<h5>圣杯布局--position</h5>
+	<div class="one">
+		<div class="top">这是头部</div>
+		<div class="content-box2">
+			<div class="center2 center">1234中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容</div>
+			<div class="left2 left">左边</div>
+			<div class="right2 right">右边</div>
+		</div>
+		<div class="foot">这是底部</div>
+	</div>
+	<h5>圣杯布局--float浮动</h5>
+	<div class="one">
+		<div class="top">这是头部</div>
+		<div class="content-box3"><!-- overflow清除浮动 -->
+			<div class="center3 center">1234宽度100%，使用padding取消左右盒子移动上来后覆盖的部分</div>
+			<div class="left3 left">左边，左浮动，宽度300px，margin-left为-100%，使自己与中间部分在同一行</div>
+			<div class="right3 right">右边，左浮动，宽度200px，margin-left为-200px，使自己与中间部分在同一行</div>
+		</div>
+		<div class="foot">这是底部</div>
+	</div>
+	<h5>双飞翼布局--float浮动</h5>
+	<div class="two">
+		<div class="top">这是头部</div>
+		<div class="two-content-box1"><!-- overflow清除浮动 -->
+			<div class="two-center1 center"> <!-- 左浮动，宽度100%，width100%； -->
+				<div>1234中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容end
+				</div> <!-- 使用margin取消左右盒子移动上来后覆盖的部分 -->
+			</div>
+			<div class="two-left1 left">左边，左浮动，宽度200px，margin-left为-100%，使自己与中间部分在同一行</div>
+			<div class="two-right1 right">右边，左浮动，宽度200px，margin-left为-200px，使自己与中间部分在同一行</div>
+		</div>
+		<div class="foot">这是底部</div>
+	</div>
+	<h5>table-cell表格布局（兼容性好，但是有时无法固定位置，会被内容撑高）</h5>
+	<div class="three">
+		<div class="top">这是头部</div>
+		<div class="three-content-box1">
+			<div class="three-left1 left">左边</div>
+			<div class="three-center1 center">
+				1234中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容end
+			</div>
+			<div class="three-right1 right">右边</div>
+		</div>
+		<div class="foot">这是底部</div>
+	</div>
+	<h5>网格布局（兼容性不是很好）</h5>
+	<div class="four">
+		<div class="top">这是头部</div>
+		<div class="four-content-box">
+			<div class="four-left left">左边</div>
+			<div class="four-center center">
+				1234中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容中间内容end
+			</div>
+			<div class="four-right right">右边</div>
+		</div>
+		<div class="foot">这是底部</div>
+	</div>
+</body>
+</html>
