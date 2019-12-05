@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>水平垂直居中</title>
+	<link rel="stylesheet" type="text/css" href="./center.css">
+</head>
+<body>
+	<h4>块级元素已知宽高</h4>
+	<h5>定位</h5>
+	<div class="outer block__outer__1">
+		<div class="block__inner__1 inner"></div>
+	</div>
+	<h5>块级元素变成内联元素</h5>
+	<div class="outer block__outer__2">
+		<div class="block__inner__2 inner"></div>
+	</div>
+	<h5>flex方式</h5>
+	<div class="outer block__outer__3">
+		<div class="block__inner__3 inner"></div>
+	</div>
+	<h5>flex方式</h5>
+	<div class="outer block__outer__3">
+		<div class="block__inner__3 inner"></div>
+	</div>
+
+	<h4>块级元素未知宽高</h4>
+	<h5>定位</h5>
+	<div class="outer block__outer__4">
+		<div class="block__inner__4">我是未知宽高哦</div>
+	</div>
+	<h5>flex</h5>
+	<div class="outer block__outer__5">
+		<div class="block__inner__5">我是未知宽高哦</div>
+	</div>
+
+	<h4>行内元素</h4>
+	<h5>单行-设置行高等于父元素高度</h5>
+	<div class="outer inline__outer__1">
+		<span class="inline__inner__1">单行的行内元素</span>
+	</div>
+	<h5>多行-设置父元素display:table-cell和vertical-align: middle</h5>
+	<div class="outer inline__outer__2">
+		<span class="inline__inner__2">多行的行内元素多行的行内元素多行的行内元素</span>
+	</div>
+</body>
+</html>

@@ -58,7 +58,7 @@ function getNowTime() {
 }
 
 /** 
- * 通过时间戳获取几天前的时间
+ * 通过时间戳获取几天前的时间描述
  */
 function formatMsgTime(timespan) {
   var dateTime = new Date(timespan);
@@ -102,6 +102,41 @@ function formatMsgTime(timespan) {
   return timeSpanStr;
 }
 
+/** 
+ * 通过时间戳获取几天前的日期
+ * 如当前为2019-10-10，调用方法formatDayTime(2)返回2019-10-08
+ */
 
+function formatDayTime(count){
+  var time1 = new Date();
+　　time1.setTime(time1.getTime()-(24 * 60 * 60 * 1000));
+　　var Y1 = time1.getFullYear();
+　　var M1 = ((time1.getMonth() + 1) > 10 ? (time1.getMonth() + 1) : '0' + (time1.getMonth() + 1));
+　　var D1 = (time1.getDate() > 10 ? time1.getDate() : '0' + time1.getDate());
+　　var timer1 = Y1 + '-' + M1 + '-' + D1 ; // 当前时间
+　　var time2 = new Date();
+　　time2.setTime(time2.getTime() - (24 * 60 * 60 * 1000 * count));
+　　var Y2 = time2.getFullYear();
+　　var M2 = ((time2.getMonth() + 1) > 9 ? (time2.getMonth() + 1) : '0' + (time2.getMonth() + 1));
+　　var D2 = (time2.getDate() > 9 ? time2.getDate() : '0' + time2.getDate());
 
+　　return Y2 + '-' + M2 + '-' + D2 ;
+}
+/** 
+ * 通过时间戳获取几月前的日期
+ * 如当前为2019-10，调用方法formatMonthTime(2)返回2019-08
+ */
+function formatMonthTime(count){
+  var time1 = new Date();
+  var Y1 = time1.getFullYear();
+  var M1 = ((time1.getMonth() + 1) >= 10 ? (time1.getMonth() + 1) : '0' + (time1.getMonth() + 1));
+  var Y2 = Y1;
+  var M2 = M1 - count;
+  if(M1 < count){
+    Y2 = Y1 - 1;
+    M2 = 12 - parseInt(M1 - count);
+  }
+  M2 = M2 >= 10 ? M2 : '0' + M2;
+  return Y2 + '-' + M2;
+}
 
